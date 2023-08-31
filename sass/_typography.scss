@@ -1,0 +1,140 @@
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: $color-bg-color;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.heading_primary{
+    @include rowgap;
+    align-items: center;
+    &-col{
+        @include colgap;
+        padding-left: 8rem;
+    }
+}
+@media (max-width:500px) {
+    .heading_primary{
+        @include colgap;
+        align-items: center;
+        justify-content: center;
+        &-col{
+            @include colgap;
+            padding-left: 0;
+        }
+    }
+}
+.tracks{
+    @include colgap($gap:1.2rem);
+    align-items: center;
+}
+.quick{
+    @include colgap($gap:.4rem);
+    &_h2{
+        color: $color-Dark-grayish-blue;
+        font-size: 1.8rem;
+    }
+    @media (max-width:500px) {
+        &_h2{
+            font-size: 2.5rem;
+            text-align: center;
+            padding-top: 1rem;
+        }
+    }
+    &_p{
+        color: $color-Grayish-Blue;
+    width: 55%;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+@media (max-width:500px) {
+    &_p{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+}
+@media (max-width:500px) {
+    .quick{
+        align-items: center;
+    }
+}
+.heading_secondary{
+    font-size: 2.5rem;
+    color: $color-Dark-grayish-blue;
+}
+@media (max-width:500px) {
+    .heading_secondary{
+        font-size: 3rem;
+        padding: 0 10rem;
+        text-align: center;
+    } 
+}
+.paragraph_primary{
+    text-align: center;
+    font-size: 1.35rem; 
+    color: $color-Grayish-Blue;
+    padding: 0 38rem;
+    line-height: 2rem;
+ }
+ @media (max-width:500px) {
+    .paragraph_primary{
+        font-size: 2rem;
+        padding: 0 10rem;
+        text-align: center;
+    } 
+}
+ .heading_tetiary{
+    font-size: 1.2rem;
+    color: $color-Dark-grayish-blue;
+    @include colgap($gap:1rem);
+    align-items: center;
+ }
+ @media (max-width:500px) {
+    .heading_tetiary{
+        font-size: 2.55rem;
+    }
+}
+ .paragraph_secondary{
+    text-align: center;
+    font-size: .8rem; 
+    color: $color-Grayish-Blue;
+ }
+ @media (max-width:500px) {
+    .paragraph_secondary{
+        font-size: 1.8rem;
+    }
+}
+ .cut{
+    @include colgap($gap:1rem);
+    align-items: center;
+    width: 21%;
+ }
+ @media (max-width:500px) {
+    .cut{
+        width: 80%;
+    }
+}
+ .last---container{
+    @include rowgap($gap:8rem);
+    justify-content: space-between;
+ }
+ @media (max-width:500px) {
+    .last---container{
+        @include colgap($gap:6rem);
+        align-items: center;
+        justify-content: center;
+    }
+}
+.space-btw{
+    @include rowgap($gap:8rem);
+}
+@media (max-width:500px) {
+    .space-btw{
+        @include colgap;
+    }
+}
+@media (max-width:500px) {
+    .flex-end{
+        @include rowgap($gap:4rem);
+    }
+}

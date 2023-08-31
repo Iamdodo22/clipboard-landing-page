@@ -1,0 +1,120 @@
+.header{
+    background-image:
+        url("/images/bg-header-desktop.png")
+    ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    @include colgap;
+    align-items: center;
+    padding-top: 15rem;
+    &_h1{
+        font-size: 6rem;
+        color: $color-Dark-grayish-blue;
+    }
+    &_p{
+        font-size:2.7rem;
+        padding: 0 14rem;
+        color: $color-Grayish-Blue;
+    }
+    &_btn{
+        @include rowgap;
+    }
+}
+
+@media (max-width:500px) {
+    .header{
+       width: 100%; 
+       &_h1{
+        font-size: 3rem;
+        text-align: center;
+        padding: 0 10rem;
+       }
+       &_p{
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 10rem;
+       }
+       &_btn{
+        @include colgap;
+       }
+    }
+}
+
+.heading_tracks{
+    height: 100vh;
+    @include colgap($gap:5rem);
+    align-items: center;
+}
+.section---clipboard{
+    @include colgap;
+    align-items: center;
+    height: 75vh;
+}
+@media (max-width:500px) {
+    .section---clipboard{
+        @include colgap;
+        margin-top: 40rem;
+    }
+}
+.section---workflow{
+    margin-top: 3rem;
+    @include colgap;
+    align-items: center;
+    height: 50vh;
+    &_main{
+        @include colgap;
+        align-items: center;
+    }
+    &_sub{
+        @include colgap($gap:10rem);
+        align-items: center;
+        &-row{
+            @include rowgap($gap:1.5rem);
+            justify-content: center;
+        }
+        @media (max-width:500px) {
+            &-row{
+             @include colgap;
+             align-items: center;
+            }
+        }
+        &-row2{
+            @include rowgap($gap:4rem);
+        }
+        @media (max-width:500px) {
+            &-row2{
+                @include colgap;
+            }
+        }
+    }
+}
+@media (max-width:500px) {
+    .section---workflow{
+        margin-bottom: 100rem;
+    }
+}
+.section---last{
+    margin-top: 10rem;
+    @include colgap;
+    align-items: center;
+}
+footer{
+    margin-top: 10rem;
+    background-color:rgba($color-Grayish-Blue,.1);
+    height: 15vh;
+    @include rowgap;
+    justify-content: space-around;
+    align-items: center;
+    &_cont1{
+        @include rowgap;
+    }
+}
+@media (max-width:500px) {
+    footer{
+        height:80vh ;
+        @include colgap($gap:6rem);
+        align-self: center;
+        justify-content: center;
+    }
+}

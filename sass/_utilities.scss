@@ -1,0 +1,39 @@
+.t-centre{
+    text-align: center;
+}
+.t-right{
+    text-align: right;
+}
+.t-left{
+    text-align: left;
+}
+.t-margin-top{
+    margin-top: 15rem;
+}
+.t-margin-bottom{
+    margin-bottom: 4rem;
+}
+.t-margin-left{
+    margin-bottom: 3rem;
+}
+.t-margin-right{
+    margin-bottom: 3rem;
+}
+li{
+    list-style: none;
+}
+@media (max-width:500px) {
+    ul{
+        @include colgap;
+        text-align: center;
+    }
+}
+@media (max-width:500px) {
+    li{
+        font-size: 2rem;
+        color: $color-Grayish-Blue;
+    }
+}
+a{
+    text-decoration: none;
+}
